@@ -2,14 +2,21 @@
 <html>
     <head>
         <title>hare krishna</title>
-        <style>
-            .h1{
-                color : red ;
-            }
-        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded',function()
+            {
+                document.querySelector('form').onsubmit = function(){
+                   const  name =  document.querySelector('#name').value;
+                   alert(`Hello,${name}`)
+                };
+            });
+        </script>
     </head>
     <body>
         <h1>Hare krishna hare krishna/!</h1>
-        Hare krishna!
+        <form>
+            <input autofocus id="name" placeholder="Name" type="text">
+            <input type="submit">
+        </form>
     </body>
 </html>
