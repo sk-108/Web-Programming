@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>learning javascript </title>
+        <script>
+            function hello(){
+                const heading = document.querySelector('h1');
+                if(heading.innerHTML === 'Hello!')
+                {
+                    heading.innerHTML = 'Goodbye!';
+                }
+                else{
+                    heading.innerHTML='Hello!'; 
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>hello!</h1>
+        <button onclick="hello()">Click here</button>
+    </body>
+</html>
+<!-- js allow us to manipula dom(document oject model) -->
